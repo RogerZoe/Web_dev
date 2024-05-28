@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">
+            <p id="message"></p>
+        </div>
+        <button onmousedown="myFunction1()" onmouseup="myFunction2()" id="btn1">Click me</button>
+    </div>
+    
+    <script>
+        function myFunction1() {
+            var box = document.getElementById("box1");
+            var msg = document.getElementById("message");
+            box.style.background = 'chartreuse';
+            msg.innerHTML = "The MouseDown Event is triggered as the mouse button is pressed";
+        }
+        function myFunction2() {
+            var box = document.getElementById("box1");
+            var msg = document.getElementById("message");
+            box.style.background = 'yellow';
+            msg.innerHTML = "The MouseUp Event is triggered as the mouse button is released";
+        }
+    </script>
+</body>
+</html>

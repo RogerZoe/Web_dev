@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <!-- //method 1. -->
+    <!-- <input onblur="myFun()" type ="text" id="name"> -->
+    <!-- // method 2 -->
+    <input  type ="text" id="name">
+    <script>
+        //method 1
+        //  let element=  document.getElementById("name");
+        //  function myFun(){
+        //       alert("enter the input "+element.value);
+        //  }
+
+        /*method 2*/
+        document.getElementById("name").addEventListener('onblur',myFun());
+        function myFun(){
+            alert("you have entered the input")
+        }
+    </script>
+    
+</body>
+</html>

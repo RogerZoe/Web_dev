@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1" onmouseout="myFunction()">
+            <p id="message"></p>
+            <p>Mouseout event triggered:
+                <span id="span_message">0</span>
+                times
+            </p>
+            <p>The Mouseout event gets fired every time the mouse button moves outside the box or its child elements (here < p >).</p>
+        </div>
+    </div>
+ 
+    <script>
+        function myFunction() {
+            var box = document.getElementById("box1");
+            box.style.background = 'linear-gradient(45deg, red, blue)';
+            box.style.color = 'white';
+            document.getElementById("message").innerHTML = "The Mouseout Event is triggered.";
+            document.getElementById("span_message").innerHTML++;
+        }
+    </script>
+
+
+</body>
+</html>

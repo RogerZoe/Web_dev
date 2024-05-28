@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="codehelp">
+        Hello Guys, Welcome to CODEHELP!
+    </div>
+</body>
+</html>
+
+<script>
+    // First fetch/select your element from the document using querySelector or getElementById or any other method, 
+    // then apply the setAttribute method.
+    //Selecting the element with id "codehelp"
+
+    let myElement = document.getElementById("codehelp");
+
+    //Now Let's try to add a 'class = help_code' to myElement using setAttribute() method...
+    myElement.setAttribute("class", "help_code");
+
+    //Now Let's try to add a "background color = red" to my Element using setAttribute() method...
+    myElement.setAttribute("style", "background-color:yellow;  color:red;  line-height:5rem;") // ==> Not recommended
+</script>

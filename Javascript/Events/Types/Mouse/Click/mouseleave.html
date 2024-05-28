@@ -1,0 +1,21 @@
+<div class="main">
+    <div class="box" id="box1" onmouseleave="myFunction()">
+        <p id="message"></p>
+        <p>Mouseleave event triggered:
+            <span id="span_message">0</span>
+            times
+        </p>
+        <p>The Mouseleave event gets fired every time the mouse button moves outside the box.</p>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var box = document.getElementById("box1");
+        box.style.background = 'linear-gradient(45deg, red, blue)';
+        box.style.color = 'white';
+        document.getElementById("message").innerHTML = "The Mouseleave Event is triggered.";
+        document.getElementById("span_message").innerHTML++;
+    }
+</script>
+

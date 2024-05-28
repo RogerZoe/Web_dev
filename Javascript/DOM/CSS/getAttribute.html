@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>getAttribute() Example</title>
+</head>
+
+<body>
+    <!--* The getAttribute() method in JavaScript is used to retrieve the value of a specified attribute on an HTML element.
+     <!-- !This method allows us to access the value of any attribute associated with an HTML element. --> 
+
+    <p id="demo" title="Example Paragraph">This is a paragraph.</p>
+
+    <button onclick="getAttributeValue()">Get Attribute Value</button>
+
+    <script>
+        
+        function getAttributeValue() {
+            var para = document.getElementById("demo");
+            var titleAttributeValue = para.getAttribute("title");
+
+            alert("The value of the 'title' attribute is: " + titleAttributeValue);
+
+            //Output : The value of the 'title' attribute is: Example Paragraph
+        }
+    </script>
+</body>
+
+</html>

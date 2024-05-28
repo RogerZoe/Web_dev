@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1" onmousemove="myFunction(event)">
+            <p id="message"></p>
+            <p>Mousemove event triggered:
+                <span id="span_message">0</span>
+                times
+            </p>
+            <p id="message1"></p>
+        </div>
+    </div>
+ 
+    <script>
+        function myFunction(e) {
+            var box = document.getElementById("box1");
+            box.style.background = 'linear-gradient(45deg, red, blue)';
+            box.style.color = 'white';
+            document.getElementById("message").innerHTML = "The Mousemove Event is triggered.";
+            document.getElementById("span_message").innerHTML++;
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("message1").innerHTML = coor;
+        }
+    </script>
+
+
+</body>
+</html>

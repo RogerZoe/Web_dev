@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+        <p>
+            hello   
+        </p>
+        <div id="1d2">
+            <p> 
+                  world
+                </p>
+        </div>
+    </div>
+
+    <div id="exampleElement">
+        <p>This is a paragraph <span>with a nested span</span>.</p>
+    </div>
+    
+    <script>
+        let element =document.getElementById("id1");
+        //    element.innerText , innerText retrieves only visible text, excluding child elements,
+        // 'hello\n\nworld'
+        
+        
+        //    element.textContent,textContent retrieves all text content, including child elements.
+        // '\n        \n            hello   \n        \n        \n             \n                  world\n
+        
+        let element2 =document.getElementById("exampleElement");
+        
+
+
+        
+    </script>
+</body>
+</html>

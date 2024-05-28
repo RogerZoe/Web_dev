@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1" style="border:2px solid black">
+        <p>
+            hello
+            <p style="border:2px solid black  "  >
+                welcome
+            </p>
+        </p>
+    </div>
+    <script>
+        // JavaScript code to manipulate the DOM
+        // Get the element with id "id1"
+        let element = document.getElementById("id1");
+
+        // Create a new paragraph element
+        let create = document.createElement("p");
+
+        // Create a text node with the content "world"
+        var content = document.createTextNode("world");
+
+        // Append the text node to the newly created paragraph element
+        create.appendChild(content);
+
+        // Insert the new paragraph element as the first child of the element with id "id1"
+        element.insertAdjacentElement("beforeend", create);
+    </script>
+</body>
+</html>
+

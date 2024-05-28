@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p id="para">para1 <SPAN>hello1 </SPAN>1para</p>
+        <p id="para">para2 <SPAN>hello2 </SPAN>2para</p>
+        <p id="para">para3 <SPAN>hello3 </SPAN>para</p>
+        <p id="para">para4 <SPAN>hello4 </SPAN>4para</p>
+    </div>
+    <script>
+        // let element=document.querySelectorAll("#para");
+        // for(let i=0;i<element.length;i++)
+        // {
+        //     let Para=element[i];
+        //         Para.addEventListener('click',function(){
+        //          alert("fuck you "+Para.textContent);
+        //         })
+
+        // }
+
+        //BUT HERE LISTENER IS SAME FOR ALL FOUR ,THEN WHY YOU NEED TO CREATE FOUR INSTANCES .................
+
+
+    </script>
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a new script element
+            var script = document.createElement('script');
+
+            // Set the source attribute to the URL of your script
+            script.src = "index.js"; // Replace 'path/to/your/script.js' with the actual path to your script
+
+            // Append the script element to the document's body
+            document.body.appendChild(script);
+        });
+    </script>
+
+    //checking whether our web page is dynamically loading or not 
+    //visit network(inspect),refresh check js <=====.......
+
+
+
+</body>
+
+</html>

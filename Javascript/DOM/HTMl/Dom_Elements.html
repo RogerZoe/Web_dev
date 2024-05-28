@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--* getElementById() -->
+    <div id="para1">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus!</span>
+
+    </div>
+    <br>
+    <!-- getElementsByClassName() 
+    *The method getElementsByClassName() returns a collection of elements with the specified class name. 
+    ?The collection is in the form of array-like object of all the child elements which matches the given class name/names -->
+    <div class="class1">hello</div>
+    <div class="class1">ji</div>
+    <div class="class1">sare</div>
+    <div class="class1">ho</div>
+
+    <!-- *getElementsByTagName() -->
+
+    <p>hello</p>
+    <p>world</p>
+    <p>duniya</p>
+
+
+    <!-- !LINK ==> https://www.w3schools.com/jsref/met_document_queryselectorall.asp -->
+
+    <!-- *Most browsers return a NodeList object for the method querySelectorAll(). -->
+    <!-- ?The getElementsByClassName() and getElementsByTagName() methods return a live HTMLCollection.
+    *The querySelectorAll() method returns a static NodeList. -->
+
+    <div id="id1">
+        <p class="para">WELCOME TO MY WORLD</p>
+        <p class="para">WELCOME TO MY WORLD</p>
+        <p class="para">WELCOME TO MY WORLD</p>
+
+    </div>
+    <script src="index.js">
+    </script>
+    <script>
+        let elements = document.querySelectorAll('.para');
+        elements[0].style.backgroundColor = "blue";
+    </script>
+
+</body>
+
+</html>
