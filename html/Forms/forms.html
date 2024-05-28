@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>form attributes</h2>
+    <form action="Arif.ph"></form> 
+    <label for="namez"> Name</label>
+    <div>
+        <input type="text" name="myname" id="namez" placeholder="enter your name">
+        <!-- id and for should be same -->
+    </div>
+    <br>;
+    <div>
+       Password <input type="password" name="myPass" required >
+    </div>
+    <br>
+    <div>
+        Roll :<input type="text" name="myroll">
+    </div>
+    <br>
+    <div>
+        PhoneNumber: <input type="tel" pattern="[0-9]{3}-[0-9]{3}">
+    </div>
+    <br>
+
+    <div>
+        <input type="time">
+    </div>
+    <br>
+
+    <br>
+    URL_OF THE WEBSITE :<input type="url">
+    <div>
+        Email <input type="email" name="myemail" pattern=".@gmail.com">
+        <!-- (input : name) -->
+    </div>
+    <br>
+    <div>
+        Date: <input type="date" name="mydate">
+    </div>
+    <br>
+    <div>
+        sylljge:<input type="number" name="bonus">
+        <!-- ONLY TAKES  INTEGERS IT TAKES EXCEPT 'E' -->
+    </div>
+    <br>
+    <div>
+        are you done: <input type="checkbox" name="myradio">
+    </div>
+    <br>
+    <div>
+        Gender: Male<input type="radio" name="Gender">
+        female <input type="radio" name="Gender">
+        others <input type="radio" name="Gender">
+        <!-- HERE NAME SHOULD BE SAME ,BECAUSE IT SELECTS ONLY ONE OF THEM  -->
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="submit now">
+        <input type="reset" value="reset Now">
+    </div>
+    <br>
+    <div>
+        Tell Me About Yourself <br><textarea name="myarea" cols="30" rows="20"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="Sex">Sex</label>
+        <select name="Gender" id="Sex">
+            <option value="Male"> male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+    </div>
+    <br>
+    <button type=" button">Click here</button>
+    <br>
+    <select  name="file" id="file">
+          <optgroup label="Food">
+          <option value="Chinese">Chinese</option>
+          <option value="Italian">Italian</option>
+        </optgroup>
+      </select>
+      <br>
+      <div>
+        <input type="button" value="fuck off">
+        <form>
+            <input type="button" value="Click Me"> <br/><br/>
+            <!-- <input type="button" onclick="alert('I'm not given a value!')" > <br/> button without any value -->
+            <input type="button" value="Disabled button" disabled>
+      </form>
+      <form>
+        <input type="color" name="colors" id="colors">
+      </form>
+      </div>
+      <br>
+      <div>
+        <form>
+            <label for="email"><h3>Enter your gmail ID:</h3></label>
+            <!-- <input
+              type="email"
+              id="email"
+              pattern=".+@gmail\.com"  
+                 IT WILL NOT ALLOW LIKE (@YAHOO.COM ) ONLY IN THE FORMAT OF ABOVE PATTERN 
+              size="30"
+              placeholder="abc123@gmail.com"
+              required
+        </input> -->
+        <form>
+    </div>
+        <label for="dp"><h3>Upload profile picture:</h3></label>
+        <input type="file" id="szd" name="avatar" accept="image/png, image/jpeg" />
+      </form>
+      <form>
+        <input type="file" name="arif"  >
+      </form>
+      <form>
+        <br>
+        <div>
+            <label for="brightness"> &nbsp;</label>
+            <input type="range" name="brightness" id="brightness">
+        </div>
+      </form>
+  
+      
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href="table.css">
+    <style >
+        table, th,td 
+        {   
+            
+            border:2px solid black;  /*css_Border property The "border" property sets the width and style of the border around the table. In this case, it sets a black border with a width of 1 pixel.*/
+            /* border-collapse: collapse; */
+            border-spacing: 0px;
+            padding: 10px;
+            /* background-color:rgb(178, 241, 17); */
+            border-color: rgb(107, 45, 214);
+              
+            /* border-style: dotted; */
+        }
+    </style>
+    <title>Document</title>
+</head>
+   <body>
+    <h2>simple_table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th> email</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>Arif</td>
+                <td>Ndcl</td>
+                <td>7995481504</td>
+                <td>blogr9212@gmail.com</td>
+             </tr>
+        <tbody>
+             <tr>
+                <td>Gudepu</td>
+                <td>KRMNR</td>
+                <td>7995481504</td>
+                <td>gudepu9212@gmail.com</td>
+             </tr>
+        <tbody>
+             <tr>
+                <td>Thanmai</td>
+                <td>NDCL</td>
+                <td>7995481504</td>
+                <td>happy9212@gmail.com</td>
+             </tr>
+        
+        </tbody>
+    </table>
+    <h2>Rowspan table</h2>
+    <table>
+        <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th> email</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Thanmai</td>
+            <td>NDCL</td>
+            <td>7995481504</td>
+            <td>happy9212@gmail.com</td>
+         </tr>
+            <tr>
+            <td>Gudepu</td>
+            <td rowspan="2">KRMNGR</td>
+            <!-- <td>KRMNR</td> -->
+            <td>7995481504</td>
+            <td rowspan="2">blogr9212@gmail.com</td>
+            <!-- <td>gudepu9212@gmail.com</td> -->
+         </tr>
+            <tr>
+            <td>Arif</td>
+            <!-- <td>NDCL</td> -->
+            <td>7995481504</td>
+            <!-- <td>blogr9212@gmail.com</td> -->
+         </tr>
+             
+        </tbody>
+    </table>
+    <h2>Colspan table </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th> email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thanmai</td>
+                <td>NDCL</td>
+                <td>7995481504</td>
+                <td>happy9212@gmail.com</td>
+             </tr>
+            <tr>
+                <td>Arif</td>
+                <td>NDCL</td>
+                <td colspan="2">  &nbsp; &nbsp; &nbsp; 7995481504@gmail.com</td>  <!--non_breaking space-->
+                <!-- <td>7995481504</td>
+                <td>happy9212@gmail.com</td> -->
+             </tr>
+            <tr>
+                <td>Gudepu</td>
+                <td>NDCL</td>
+                <td>7995481504</td>
+                <td>gudepu@9212@gmail.com</td>
+             </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
