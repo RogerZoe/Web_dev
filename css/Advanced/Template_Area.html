@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ! RATHER WRITING WHERE (HEADER,SIDEBAR,FOOTER,CONTENT) WILL START AND END BY USING GTC OR GTR -->
+    <!--* SO WE USE TEMPLATE AREAS ,SO THAT NAMING WILL BE EASY LIKE IN A 2D MATRIX FORM  -->
+    <style>
+        .container {
+            padding: 10px;
+            display:grid;
+            grid-template-areas: 
+              "header header header"
+              "sidebar content1 content1"
+              "sidebar content2 content3"
+              "footer footer footer"
+              ;
+        }
+        
+
+        .items {
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 10px;
+            display: grid;
+            /* grid-template-columns: repeat(4,1fr); */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #header {
+            grid-area: header;
+        }
+        #sidebar
+        {
+            grid-area: sidebar;
+        }
+        #content1
+        {
+            grid-area: content1;
+        }
+        #content2
+        {
+            grid-area: content2;
+        }
+        #content3
+        {
+                 grid-area:content3;
+        }
+        #footer
+        {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="header">header</div>
+        <div class="items" id="sidebar">sidebar</div>
+        <div class="items" id="content1">content1</div>
+        <div class="items" id="content2">content2</div>
+        <div class="items" id="content3">content3</div>
+        <div class="items" id="footer">footer</div>
+    </div>
+
+</body>
+
+</html>

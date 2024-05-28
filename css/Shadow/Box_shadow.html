@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        border: 2px solid black;
+        background-color: bisque;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box {
+        --color: lawngreen;
+        border: 2px solid black;
+        height: 300px;
+        width: 600px;
+        margin: 2px;
+        padding: 5px;
+
+        background-color: var(--color);
+        /* box-shadow: 10px 5px red;      --->  X,Y,COLOR; */
+        /* box-shadow:10px -5px 4px red;   --->X,Y,BLUR,COLOR */
+        /* box-shadow: 10px 4px 32px 44px gold; --> X,Y,BLUR,RANGE_FOR_BLUR,COLOR; */
+        /* box-shadow:10px 13px red ,14px 2px yellow;    --> two colors */
+        /* box-shadow: inset 6px 7px red;  --> Inside the box; */
+    }
+
+    img {
+        float: left;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="Animejpeg.jpeg " height:100px width:100px>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga impedit distinctio architecto
+                repellendus quos accusamus velit quaerat a culpa!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

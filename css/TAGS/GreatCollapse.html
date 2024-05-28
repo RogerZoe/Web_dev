@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box
+    {
+        border:2px solid black;
+        overflow: auto;
+    }
+    .item1
+    {
+        border:1px solid black;
+        height:200px;
+        width:200px;
+        margin:2px;
+        background-color: red;
+         /*    -------------->  IF I APPLY HERE FLOAT  PROPERTY ,THEN IT BECOMES COLLAPSE...... APPEARS LIKE SINGLE LINE UNDER THREE BOXES........  */
+        float: left;
+
+         /* SO,THATS WHY WE WRITE OVERFLOW:AUTO; */
+    }
+    
+   
+</style>
+<body>
+     <div class="box">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+     </div>
+</body>
+</html>

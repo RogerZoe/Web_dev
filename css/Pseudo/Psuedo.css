@@ -1,0 +1,23 @@
+p:hover
+{
+    color:red;
+}
+a:visited
+{
+    color:blue;
+}
+h4::first-letter
+{
+    color:red;
+    /* font-stretch: condensed; */
+    font-size:200%;
+    /* border:1px solid black; */
+}
+ /* while selecting a particular text in this color  */
+::selection
+{
+    color:goldenrod;
+}
+/* h4{
+    border:2px solid black;
+} */

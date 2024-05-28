@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro.css">
+    <style>
+        /* IT MEANS IF IT IS GREATER THAN 500PX ,THEN ROW ELSE COLUMN  */
+        @media (min-width:500px) {        
+            .container {
+                flex-direction: row;
+            }
+        }
+        @media (max-width:500px)
+        {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box" id="A">A</div>
+        <div class="box" id="B">B</div>
+        <div class="box" id="C">C</div>
+        <div class="box " id="D">D</div>
+    </div>
+
+</body>
+
+</html>

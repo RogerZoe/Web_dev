@@ -1,0 +1,34 @@
+.container
+{
+    border:2px solid black;
+    height:600px;
+    width:700px;
+    margin:2px;
+    padding:2px;
+    display: flex;
+
+}
+.box{
+    border:1px solid black;
+    height:200px;
+    width:200px;
+}
+#A
+{
+    background-color: red;
+}
+
+#B
+{
+    background-color: green;
+}
+
+#C
+{
+    background-color: blue;
+}
+
+#D
+{
+    background-color: yellow;
+}

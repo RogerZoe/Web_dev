@@ -1,0 +1,27 @@
+table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+    margin:20px;
+    table-layout:fixed;
+}
+td,th{
+    padding: 0.5em;
+    text-align:center;
+
+}
+tbody tr:nth-child(odd)
+{
+    background-color: red;
+}
+tbody tr:nth-child(even)
+{
+    background-color:black;
+}
+tbody{
+    color:green;
+}
+th{
+    height: 40px;
+}
+
+
