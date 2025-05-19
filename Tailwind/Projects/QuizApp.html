@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons on Right</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .icon-container {
+            position: absolute;
+            top: 0.5rem;
+            right: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        .H {
+            height: 300px;
+            width: 500px;
+        }
+
+        .icon-style {
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .change:hover {
+            color: red;
+        }
+
+        .icon-style:hover {
+            color: aquamarine;
+        }
+    </style>
+
+</head>
+
+<body class="bg-sky-300 antialiased p-2 relative">
+    <div class="Add flex justify-end mb-2">
+        <i class="fas fa-plus text-white text-4xl cursor-pointer change"></i>
+    </div>
+
+    <div class="container flex flex-wrap gap-4 ">
+    </div>
+
+
+    <script>
+        let data = JSON.parse(localStorage.getItem("notes")) || [];
+
+        function create(noteText = "") {
+            const container = document.querySelector('.container');
+
+            const box = document.createElement('div');
+            box.className = 'H flex flex-col    rounded-xl overflow-hidden relative  ';
+
+            // Icon container using normal CSS
+            const icons = document.createElement('div');
+            icons.className = 'icon-container  ';
+
+            const saveIcon = document.createElement('i');
+            saveIcon.className = 'fas fa-floppy-disk icon-style';
+
+            const deleteIcon = document.createElement('i');
+            deleteIcon.className = ' fas fa-trash icon-style';
+
+
+            deleteIcon.addEventListener("click", () => {
+                const index = data.indexOf(textarea.value);
+                if (index > -1) {
+                    data.splice(index, 1);
+                    localStorage.setItem("notes", JSON.stringify(data));
+                }
+                box.remove();
+            });
+            icons.appendChild(saveIcon);
+            icons.appendChild(deleteIcon);
+
+            const header = document.createElement('div');
+            header.className = 'h-8 bg-slate-900 rounded-xl';
+
+            const textarea = document.createElement('textarea');
+            textarea.className = 'bg-white flex-grow resize-none outline-none w-full rounded-xl';
+            textarea.placeholder = 'Type here...';
+            textarea.value = noteText;
+            // console.log(noteText);
+
+            saveIcon.addEventListener("click", () => {
+                SaveNotes()
+            }
+            );
+
+            box.appendChild(icons);
+            box.appendChild(header);
+            box.appendChild(textarea);
+
+            container.appendChild(box);
+        }
+
+        function SaveNotes() {
+            const textareas = document.querySelectorAll(".container textarea");
+            const allNotes = [];
+
+            textareas.forEach(textarea => {
+                const note = textarea.value.trim();
+                if (note) {
+                    allNotes.push(note);
+                }
+            });
+
+            if (allNotes.length === 0) {
+                localStorage.removeItem("notes");
+            } else {
+                localStorage.setItem("notes", JSON.stringify(allNotes));
+            }
+
+            // Also update the global data variable
+            data = allNotes;
+        }
+
+        // Load saved notes from localStorage on page load
+        window.addEventListener("DOMContentLoaded", () => {
+            data.forEach(note => {
+                create(note);// !the saved notes will pass and store back in textArea.
+            });
+        });
+        document.querySelector(".Add").addEventListener("click", () => create());
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
