@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--By adding an anchor to your HTML code, you can create links that take users directly 
+        to that specific location on the page, rather than just to the top of the page.-->
+    <!--href attribute used to specify destination address-->
+    <!--Same Tab-->
+    <a href="https://www.scaler.com/topics/html/html-links/">LINK</a> <br>
+    <!--Different Tab-->
+    <a href="https://www.scaler.com/topics/html/html-links/" target="_blank">Target</a>
+
+    <!--INTERNAL LINKS-->
+    <h1>My Webpage</h1>
+
+    <ul>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section3">Section 3</a></li>
+    </ul>
+
+    <h2 id="section1">Section 1</h2>
+    <p>This is the content of section 1.</p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>This is the content of section 2.</p>
+
+    <h2 id="section3">Section 3</h2>
+    <p>This is the content of section 3.</p>
+
+    <!--IMAGE AS A LINK-->
+    <A HREF="https://www.scaler.com/topics/html/html-links/"><img
+            src="https://scaler.com/topics/images/using-image-as-a-link.gif " width="250" height="200"></a>
+
+    <!--BUTTON AS A LINK-->
+
+    <h1>Html Links | Button</h1>
+
+    <!-- onclick event -->
+    <button onclick="window.location.href = 'https://www.scaler.com/topics/';">
+        Button 1
+    </button>
+
+    <br>
+
+    <!-- By adding button tag inside anchor tag -->
+    <a href="https://www.scaler.com/topics/"><button> Button 2 </button></a>
+
+    <br>
+
+    <!-- By using form tag -->
+    <form action="https://www.scaler.com/topics/">
+        <input type="text"  placeholder="Enter your name">
+        <button type="submit">
+            Button 3
+        </button>
+    </form>
+
+    <!--DOWNLOAD LINKS-->
+
+    <h1>Html Links | Download</h1>
+
+    <img src="Profile.jpg" width="400px">
+    <br>
+
+    <!--     upon clicking this link, the user will be able to download the above image -->
+    <a href="Profile.jpg" download="img">Click here to download the above image.</a>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.hello
+{
+    display:inline-block;
+    overflow: hidden;
+    border-radius:50%;
+    /* margin-left: -100px; */
+    
+}
+img{
+    height:100%;
+    width:auto;
+    margin-left: -120px;
+}

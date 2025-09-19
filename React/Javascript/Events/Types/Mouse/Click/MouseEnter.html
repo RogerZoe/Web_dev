@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Mouseenter Event</title>
+    <style>
+        .main {
+            width: 100%;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+            text-align: center;
+            font-size: larger;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1" onmouseenter="myFunction()">
+            <p id="message"></p>
+            <p>Mouseenter event triggered:
+                <span id="span_message">0</span>
+                times
+            </p>
+            <p>The Mouseenter event gets fired every time the mouse enters the box.</p>
+        </div>
+    </div>
+ 
+    <script>
+        function myFunction() {
+            var box = document.getElementById("box1");
+            box.style.width = '500px';
+            box.style.height = '300px';
+            box.style.background = 'chartreuse';
+            document.getElementById("message").innerHTML = "The Mouseenter Event is triggered.";
+            document.getElementById("span_message").innerHTML++;
+        }
+    </script>
+</body>
+</html>

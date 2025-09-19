@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #number-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .number-box {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      color: white;
+      font-weight: bold;
+      /* opacity: 0; */
+      /* transition: opacity 0.5s ease; */
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Dynamic Number Boxes</h2>
+
+  <div id="number-container"></div>
+
+  <script>
+    function isPrime(num) {
+      if (num <= 1) return false;
+      if (num <= 3) return true;
+      if (num % 2 === 0 || num % 3 === 0) return false;
+      for (let i = 5; i * i <= num; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false;
+      }
+      return true;
+    }
+
+    const container = document.getElementById('number-container');
+
+    for (let i = 1; i <= 100; i++) {
+      setTimeout(() => {
+        const numberBox = document.createElement('div');
+        numberBox.classList.add('number-box');
+        numberBox.textContent = i;
+
+        if (isPrime(i)) {
+          numberBox.style.backgroundColor = 'red';
+        } else if (i % 2 === 0) {
+          numberBox.style.backgroundColor = 'green';
+        } else {
+          numberBox.style.backgroundColor = 'yellow';
+        }
+
+        container.appendChild(numberBox);
+
+        // Triggering the transition
+        setTimeout(() => {
+          numberBox.style.opacity = 1;
+        }); // A small delay to ensure the transition works
+
+      }, i * 200); // Delay each box by 100ms times its index
+    }
+  </script>
+
+</body>
+
+</html>

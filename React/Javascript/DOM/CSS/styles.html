@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #sPara
+        {
+            background-color: red;
+        }
+        #fpara
+        {
+            background-color: green;
+        }
+        </style>
+</head>
+<body>
+    <div id="fpara" style ="border:2px solid black">
+        <p >First</p>
+        <div id="sPara" style="border:1px solid black" >
+            <p>
+                second
+            </p>
+        </div>
+    </div>
+    <script>
+        let element =document.querySelector("#sPara");
+        element.style.background="yellow";
+        // The style method allows us to directly access and modify CSS properties of an HTML element through its style object.
+
+    </script>
+
+    
+</body>
+</html>

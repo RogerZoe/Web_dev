@@ -1,0 +1,13 @@
+.color1
+{
+    border: 2px solid;
+   border-color: black;
+   /* border-top: black;
+   border-left: blue;
+   border-right: green; */
+   border-width: 7px;
+   border-right-color: navy;
+   border-top-color: rgb(85, 14, 199);
+   border-left-color: green;
+    border-block-end-color: red;
+}

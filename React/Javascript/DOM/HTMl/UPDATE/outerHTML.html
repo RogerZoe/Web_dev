@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello">
+        <p>
+            WELCOME
+        </p>
+    </div>
+    <script>
+        let element=document.getElementById("hello");
+         // Modify the outer HTML of the selected element
+        let ans="WORLD";
+         // Modify the outer HTML of the selected element
+        let ans2="<div><p>world</p></div>";
+        element.innerHTML=ans2;
+    </script>
+</body>
+</html>

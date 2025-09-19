@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items
+        {
+            border:2px solid black;
+            padding:10px;
+            background-color: greenyellow;
+            margin:10px;
+            
+        }
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            display:grid;
+            gap:10px;
+            /* grid-template-rows: repeat(2,2fr); */
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+                       /* ==> The benefit of auto-fit is that it will repeat the number of times it is necessary. The minmax will decide the minimum width given to any rows. */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1 {
+            font-size: 22px;
+            line-height: 20px;
+            color: blue;
+            border-style: inset;
+            border-style: double;
+            border-width: 10px;
+            border-right-color: rgb(24, 6, 6);
+            border-left-color: blue;
+            border-top-color: yellow;
+            border-bottom-color: red
+        }
+
+        #para2 {
+            border-style: dashed;
+            border-width: 10px;
+            border-right-color: green;
+            border-left-color: blue;
+            border-top-color: yellow;
+            border-bottom-color: red
+        }
+
+        #para3 {
+            border-width: 10px;
+            border-style: groove;
+            border-right-color: green;
+            border-left-color: blue;
+            border-top-color: yellow;
+            border-bottom-color: red
+        }
+        .arif {
+            border-width: 10px;
+            border-style: outset;
+            border-right-color: green;
+            border-left-color: blue;
+            border-top-color: yellow;
+            border-bottom-color: red
+        }
+
+        /* Select the adjacent sibling  */
+        p+span {
+            color: red;
+        }
+
+        /* Select all general siblings  */
+        p~p {
+            font-weight: bold ;
+            
+        }
+        */
+        /* <!--ATTRIBUTE SELECTOR--> */
+        a[target="abc"] {
+
+            background-color: rgb(23, 230, 123);
+        }
+
+
+        a:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <p class="arif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto quos vel. Consectetur atque quas
+            obcaecati? Earum, natus nam impedit nesciunt reiciendis, odit error itaque obcaecati distinctio id, vel
+            corporis.
+        </p>
+
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus enim error eos
+            voluptatibus illo
+            minima ad obcaecati nobis eius.</p>
+        <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus enim error eos
+            voluptatibus illo
+            minima ad obcaecati nobis eius.</p>
+        <p id=para3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus enim error eos voluptatibus
+            illo
+            minima ad obcaecati nobis eius.</p>
+        <p id=para4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus enim error eos voluptatibus
+            illo
+            minima ad obcaecati nobis eius.</p>
+    </div>
+    <div class="container">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <span>Some inline element</span>
+        <p>Third paragraph</p>
+        <div>Not a sibling</div>
+    </div>
+    <!-- ATTRIBUTE SELECTOR -->
+    <a href="https://www.google.com/" target="abc">GOOGLE
+    </a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis quasi vel quae debitis modi odio
+        omnis voluptatibus iusto dicta!</p>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: red;
+            transition: all 3.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p id="fPara">hello</p>
+        <a id="anchor" href="https://www.google.com">ARIF</a>
+    </div>
+    <script>
+        //method 1
+        function hlo(event)
+        {
+            console.log(event);
+            let element =document.getElementById("fPara");
+            element.textContent="welcome to my world";
+            element.style.transition="all 3.4s ease-in";
+            // element.style.backgroundColor="green"; ==> direct use of css 
+            element.classList.add("highlight")  /* external css to add the class */ 
+
+            
+        }
+        let element =document.getElementById("fPara");
+        element.addEventListener('click',hlo);   
+
+        //==> method 2
+
+        // element.addEventListener('click', function (event)
+        // {
+        //     console.log(event);
+        //     let element =document.getElementById("fPara");
+        //     element.textContent="welcome to my world";
+        // });    
+        // element.removeEventListener ('click',hlo);  
+        
+        
+        //FOR DEFAULT ACTION
+        let anchor=document.getElementById("anchor");
+        anchor.addEventListener('click',function(event)
+        {
+            event.preventDefault();
+            anchor.textContent="Holidays";
+        });
+    </script>
+</body>
+</html>
